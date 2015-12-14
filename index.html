@@ -1,0 +1,72 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>装修圈圈--省心省力的装修好帮手！</title>
+<style>
+body{ margin:0; padding:0}
+.menu{ height:110px; background-color:#333333}
+.menu ul,.menu li{ margin:0; padding:0; list-style:none}
+.menu li{ float:right; margin:0 10px; text-align:center; color:#FFFFFF; height:39px; line-height:39px; width:480px; cursor:pointer; font-size:18px; font-family:"微软雅黑";color:#fff;}
+.menu li a{color:#fff;text-decoration: none;}
+.menu img{ margin:15px 50px}
+.page{height:750px;}
+.page1 { background: url(img/1.jpg) center center #71B337;}
+.page2 { background: url(img/2.jpg) center center #56AAFF;}
+.page3 { background: url(img/3.jpg) center center #F2AA31;}
+.page4 { background: url(img/4.jpg) center center #49AEDC;}
+.page5 { background: url(img/5.jpg) center center #8E83E9;}
+span.and{display:block; width:259px; height:72px; position:absolute; top:420px; left:50%; margin-left:-130px;}
+span.ios{display:block; width:259px; height:72px; position:absolute; top:520px; left:50%; margin-left:-130px;}
+span.ios img,span.and img{ border:none}
+span.erm1{ position:absolute; width:184px; height:174px;top:418px;;left:50%; margin-left:160px;background:url(img/up.png) no-repeat;padding:8px 10px 10px 17px}
+span.erm2{ position:absolute; width:184px; height:174px;top:418px;;left:50%; margin-left:160px;background:url(img/down.png) no-repeat;padding:8px 10px 10px 17px}
+span.erm1 img,span.erm2 img{ width:160px; height:160px;}
+</style>
+<script src="img/jquery.min.js"></script>
+<script language="javascript">
+function chanage(obj){
+for(i=1;i<4;i++){
+ 	if(obj==i){
+		$("#c"+i).attr('class','select');
+	}else{
+		$("#c"+i).removeClass("select");
+	}
+  }
+  $("#pstyle").val(obj);
+  ermsty("1");
+}
+
+
+</script>
+</head>
+<body>
+<input type="hidden" id="pstyle" />
+<div class="main">
+	<div class="page page1">
+	<span class="and"><img src="img/wechat.gif" /></span>
+	
+	<span class="erm1" id="erm_bg"><img src="img/qrcode.jpg" id="erm"></span></div>
+		
+	<div class="page page2"></div>
+	<div class="page page3"></div>
+	<div class="page page4"></div>
+	<div class="page page5"></div>
+		<div class="menu">
+		<table width="1200" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td><img src="img/btnbg.jpg"></td>
+			<td>
+				<ul>
+					<li><a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备13086621号</a></li>
+				</ul>
+			</td>
+		  </tr>
+		</table>
+	</div>
+</div>
+
+
+</body>
+</html>
